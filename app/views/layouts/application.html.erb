@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><%= yield(:title) %></title>
+		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">
+				<div id="nav" class="clearfix">
+					<ul>
+						<li><%= image_tag('gyoza.png', alt: 'Gyoza', class: 'logo') %>
+						</li>
+						<li style="margin-left:10px;"><a href="/" title="GyozaGuy.com">GyozaGuy.com</a></li>
+						<li><a href="/posts" title="All Posts">All Posts</a></li>
+						<li><a href="mailto:gyozaguy@gmail.com" title="Contact">Contact</a></li>
+						<div id="navRight">
+						</div>
+					</ul>
+				</div>
+			</div>
+			<div id="content">
+				<%= yield %>
+			</div>
+			<div id="footer">
+				Copyright &copy; 2015 GyozaGuy.com - All Rights Reserved
+			</div>
+		</div>
+	</body>
+</html>

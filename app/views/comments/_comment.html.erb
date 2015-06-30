@@ -1,0 +1,15 @@
+<a name="comments"></a>
+<div class="commentContainer">
+	<% if @post.comments.count == 0 %>
+	No comments!
+	<% end %>
+	<% @post.comments.each do |comment| %>
+	<div class="commentContent">
+		<a name="<%= comment.id %>"></a>
+		<div class="postInfo">
+			Comment posted at <%= comment.comment_time %> by <%= link_to comment.user.username, comment.user %>
+		</div>
+		<div class="comment"><%= comment.content %></div>
+	</div>
+	<% end %>
+</div>

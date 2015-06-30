@@ -1,0 +1,12 @@
+<% content_for :title, 'All Posts | GyozaGuy.com' %>
+<% @posts.each do |post| %>
+<div class="post">
+	<h3><%= link_to post.title, post %></h3>
+	<h4><%= post.post_date %> | By <%= post.user.username %></h4>
+	<%= post.content.html_safe %>
+	<p>
+		<%= link_to post.comments.count.to_s + ' comment(s)', post_path(post, anchor: 'comments') %>
+	</p>
+</div>
+<div class="postSpacer"></div>
+<% end %>
