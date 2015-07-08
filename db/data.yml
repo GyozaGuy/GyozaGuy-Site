@@ -9,7 +9,7 @@ posts:
   - user_id
   - created_at
   - updated_at
-  records: 
+  records:
   - - 1
     - '2015-01-20'
     - Sample Title
@@ -41,12 +41,12 @@ users:
   - level
   - created_at
   - updated_at
-  records: 
+  records:
   - - 1
     - GyozaGuy
     - gyozaguy@gmail.com
-    - "!@#$Exterus8"
-    - 
+    - "<password>"
+    -
     - '2015-01-21 03:59:06.136112'
     - '2015-01-21 03:59:06.136112'
 
@@ -60,7 +60,7 @@ comments:
   - user_id
   - created_at
   - updated_at
-  records: 
+  records:
   - - 1
     - '2015-01-21 05:11:59.506150'
     - This is a test!
