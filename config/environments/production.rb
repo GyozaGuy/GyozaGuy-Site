@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Secret Key Stuffs
-  config.secret_key_base = '6dc6781bf8b21bb13a84e3f8d00a83809a3742d8f32caff773762f2520409dc67900195cefdf902c286228633d35ee2a978cea7deb97142f17f80c6915413c1f'
+  config.secret_key_base = 'REDACTED'
 
   # Settings specified here will take precedence over those in config/application.rb.
 
